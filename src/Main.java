@@ -18,6 +18,7 @@ public class Main {
                 }
             } else if (isr.read() == -1) {
                 System.out.flush();
+                isr.close();
                 break;
             }
         }
